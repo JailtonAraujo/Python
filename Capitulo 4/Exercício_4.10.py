@@ -20,7 +20,6 @@
 print("Escola uma entra as instalações abaixo:\n[r] para residênciais\n[i] para industriais\n[c] para comércias")
 tipo_de_instalacao = input(">>>")
 print("\n")
-#quant_kwh = float(input("Digite a quantidade de KWh consumidos:"))
 
 if tipo_de_instalacao == "r":
     quant_kwh = float(input("Digite a quantidade de KWh consumidos:"))
