@@ -11,7 +11,7 @@
 # tipo        | Faixa (KWh)   |  preço
 # Residencial | Até 500       | R$ 0.40
 #             | Acima de 500  | R$ 0.65
-# Comercial   | Ate 1000      | R$ 0.55
+# Comércial   | Ate 1000      | R$ 0.55
 #             | Acima de 1000 | R$ 0.60
 # Industrial  | Até 5000      | R$ 0.55
 #             | Acima de 5000 | R$ 0.60
