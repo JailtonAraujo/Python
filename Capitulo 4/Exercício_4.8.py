@@ -17,11 +17,11 @@ num1 = float(input("Digite o primeiro numero:"))
 num2 = float(input("Digite o segundo numero:"))
 
 if operacao == 1:
-    print(f"{num1} X {num2} = {num1*num2}")
+    print(f"{num1} X {num2} = {num1*num2:5.2f}")
 elif operacao == 2:
-    print(f"{num1} ÷ {num2} = {num1/num2}")
+    print(f"{num1} ÷ {num2} = {num1/num2:5.2f}")
 elif operacao == 3:
-    print(f"{num1} + {num2} = {num1+num2}")
+    print(f"{num1} + {num2} = {num1+num2:5.2f}")
 elif operacao == 4:
-    print(f"{num1} - {num2} = {num1-num2}")
+    print(f"{num1} - {num2} = {num1-num2:5.2f}")
 
