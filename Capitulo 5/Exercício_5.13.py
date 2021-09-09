@@ -28,7 +28,7 @@ while divida != 1 :
         restante = divida
         divida = 1
 
-    # Condição que verifica se as condições de pagamento são viaveis, casa ocorra algum exemplo de pagamento que nunca sera quitado, EX: divida = 100, juro = 10 e pagamento = 10
+# Condição que verifica se as condições de pagamento são viaveis, casa ocorra algum exemplo de pagamento que nunca sera quitado, EX: divida = 100, juro = 10 e pagamento = 10
     if numero_parcelas > 50:
         print("Este modo de pagamento é inviavel almento o valor do pagamneto por favor!")
         divida = 1  
