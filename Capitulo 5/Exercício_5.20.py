@@ -1,17 +1,27 @@
+# coding=utf-8
+# Exercícios do livro Introdução à Programação Com Python - 3° Edição
+# Autor: Nilo Ney Coutinho Menezes
+# Ano: 2019
+# Editora: Novatec Editora Ldta #
+
+# Exercício 5.20 O que acontece se digitarmos 0,001 no programa anterior? Caso ele
+# não funcione, altere-o de forma a corrigir o problema.
+
 valor = float(input("Digite o valor a pagar:"))
-cédulas = 0
-atual = 100
+cedulas= 0
 apagar = valor
+atual = 100
+
 while True:
     if atual <= apagar:
         apagar -= atual
-        cédulas += 1
+        cedulas += 1
     else:
         if atual >= 1:
-            print(f"{cédulas} cédula(s) de R${atual}")
+            print(f"{cedulas} cedula(s) de R${atual}")
         else:
-            print(f"{cédulas} moeda(s) de R${atual:5.2f}")
-        if apagar < 0.01:
+            print(f"{cedulas} moeda(s) de {atual}")
+        if apagar < 0.001:
             break
         elif atual == 100:
             atual = 50
@@ -33,4 +43,6 @@ while True:
             atual = 0.02
         elif atual == 0.02:
             atual = 0.01
-        cédulas = 0
+        elif atual <= 0.01:
+            atual = 0.001
+        cedulas = 0
