@@ -10,3 +10,25 @@
 # dessas divisões for igual a zero, o número não é primo. Observe que O e 1 não são
 # primos e que 2 é o único número primo que é par.
 
+num = int(input("Digte um numero:"))
+
+if num < 0:
+    print(f"{num} Numero invalido!")
+if num == 0 or num ==1:
+    print(f"Digite um maior que {num}")
+else:
+    if num == 2:
+        print(f"{num} é um numero primo!")
+    elif num % 2 == 0:
+        print(f"{num} não é primo")
+    else:
+        cont = 3
+        while cont < num:
+            if num % cont == 0:
+                break
+            cont = cont + 2
+
+        if cont == num:
+            print(f"{num} É primo")
+        else:
+            print(f"{num} Não é primo!")
