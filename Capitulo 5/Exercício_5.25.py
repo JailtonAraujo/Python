@@ -11,3 +11,11 @@
 # p usando a fórmula apresentada. Pare quando a diferença absoluta entre n e o
 # quadrado de p for menor que 0,0001.
 
+num = float(input("Digite o numero para saber sua raiz quadrada:"))
+
+b = 2
+
+while abs(num - (b * b)) > 0.00001:
+    p = (b + (num / b)) / 2
+    b = p
+print(f"A raiz aproximada de {num} é {p:5.5f}")
