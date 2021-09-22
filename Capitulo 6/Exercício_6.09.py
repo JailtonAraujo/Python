@@ -11,8 +11,8 @@
 L = [15, 7, 27, 39]
 p = int(input("Digite um valor a procurar: "))
 v = int(input("Digite outro valor a ser procurado:"))
-i = 0
-j = 0
+i = False
+j = False
 x = 0
 
 posicao1 = len(L)
@@ -20,25 +20,25 @@ posicao2 = len(L)
 
 while x < len(L) :
     if L[x] == p:
-        i = 1
+        i = True
         posicao1 = x
     elif L[x] == v:
-        j = 1
+        j = True
         posicao2 = x
     x += 1
 
-if i == 1:
+if i == True:
     if posicao1 < posicao2:
         print(f"{p} achado na posição {posicao1} primeiro!")
     else:
         print(f"{p} achado na posição {posicao1}")
-elif i == 0:
+elif i == False:
     print(f"{p} não encontrado")
 
-if j == 1:
+if j == True:
     if posicao2 < posicao1:
         print(f"{v} achado na posição {posicao2} primeiro!")
     else:
         print(f"{v} achado na posição {posicao2}!")
-elif j == 0:
+elif j == False:
     print(f"{v} não encontrado!")
