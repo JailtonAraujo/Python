@@ -4,9 +4,10 @@
 # Ano: 2019
 # Editora: Novatec Editora Ldta #
 
-# Exercício 6.9 Modifique o exemplo para pesquisar dois valores. Em vez de apenas p,
-# leia outro valor v que também será procurado. Na impressão, indique qual dos
-# dois valores foi achado primeiro.
+# Exercício 6.10 Modifique o programa do Exercício 6.9 de forma a pesquisar p e v
+# em toda a lista e informando o usuário a posição onde p e a posição onde v foram
+# encontrados.
+
 
 L = [15, 7, 27, 39]
 p = int(input("Digite um valor a procurar: "))
@@ -28,13 +29,11 @@ while x < len(L) :
     x += 1
 
 if i == True:
-    if posicao1 < posicao2:
-        print(f"{p} achado antes de {v}!")
+        print(f"{p} achado na posição {posicao1}!")
 elif i == False:
     print(f"{p} não encontrado")
 
 if j == True:
-    if posicao2 < posicao1:
-        print(f"{v} achado antes de {p}!")
+        print(f"{v} achado na posição {posicao2}!")
 elif j == False:
     print(f"{v} não encontrado!")
