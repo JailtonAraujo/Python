@@ -7,7 +7,7 @@
 #6.14 O que acontece quando a lista já está ordenada? Rastreie o Programa 6.20, mas com a lista L = [1, 2, 3, 4, S].
 
 
-L = [ 7, 4, 3, 12, 8]
+L = [ 1, 2, 3, 4, 5]
 
 fim = 5
 
@@ -28,3 +28,5 @@ for e in L:
     print(e)
 
 
+# Coso tente ordenar uma lista que ja esta ordenada o algoritmo ira percorrer a lista porem não fará alterações, pois a mesma já
+# esta ordenada
