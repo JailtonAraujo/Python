@@ -11,3 +11,19 @@ S1 = input("Digite a primeira String:")
 S2 = input("Digite a segunda String:")
 S3 = input("Digite a terceira String:")
 
+if len(S2) == len(S3):
+    resultado = ""
+    for letra in S1:
+        posição = S2.find(letra)
+        if posição != -1:
+            resultado += S3[posição]
+        else:
+            resultado += letra
+
+    if resultado == "":
+        print("Todos os caracteres foram removidos.")
+    else:
+        print(f"Os caracteres {S2} foram substituidos por "
+              f"{S3} em {S2}, gerando: {resultado}")
+else:
+    print("ERRO: A segunda e a terceira string devem ter o mesmo tamanho.")
