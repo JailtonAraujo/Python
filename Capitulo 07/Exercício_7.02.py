@@ -14,5 +14,7 @@ S3 = ""
 for letra in S1:
     if letra in S2 and letra not in S3:
         S3 = S3 + letra
-
-print(f"Caracteres em comuns entre as strings: {S3}")
+if S3 == "":
+    print("As Strigs não tem caracteres em comum!")
+else:
+    print(f"Caracteres em comuns entre as strings: {S3}")
